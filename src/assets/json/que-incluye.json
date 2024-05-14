@@ -1,27 +1,27 @@
 [
     {
         "title": "Foto en la portada",
-        "description": "Agrega una fotografía especial a la portada de la invitación digital. ¿Qué mejor manera de hacer que la invitación sea única y memorable?",
+        "description": "Agrega una fotografía especial a la portada de la invitación digital",
         "img": "📸"
     },
     {
         "title": "Cuenta regresiva",
-        "description": "Establece una fecha y hora específicas para el evento. La cuenta regresiva aparecerá en la invitación, mostrando cuánto tiempo falta para que comience la fiesta",
+        "description": "Establece una fecha y hora específicas para el evento, la misma aparecerá en la invitación",
         "img": "🕒"
     },
     {
         "title": "Textos y colores personalizados",
-        "description": "Puedes elegir entre una amplia gama de fuentes, estilos de texto y paletas de colores para crear una invitación única y memorable",
+        "description": "Puedes elegir entre una amplia gama de fuentes, estilos de texto y paletas de colores",
         "img": "🎨"
     },
     {
         "title": "Tenida",
-        "description": "Proporciona a tus invitados información sobre el código de vestimenta recomendado para tu evento. Ya sea casual, formal, de etiqueta o temático",
+        "description": "Proporciona a tus invitados información sobre el código de vestimenta recomendado para tu evento",
         "img": "👔"
     },
     {
-        "title": "Ubicación del evento",
-        "description": "Comparte detalles importantes sobre dónde se llevará a cabo tu celebración",
+        "title": "Ubicación",
+        "description": "Comparte detalles importantes sobre dónde se llevará a cabo tu evento",
         "img": "🗺️"
     }
 ]

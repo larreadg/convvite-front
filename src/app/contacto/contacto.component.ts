@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { telefono } from '../Constants';
+import { email, telefono } from '../Constants';
 
 @Component({
   selector: 'app-contacto',
@@ -8,4 +8,5 @@ import { telefono } from '../Constants';
 })
 export class ContactoComponent {
   telefono = telefono
+  email = email
 }

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { CarouselModule } from 'primeng/carousel';
+import { SidebarModule } from 'primeng/sidebar';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -13,6 +14,7 @@ import { QueIncluyeComponent } from './que-incluye/que-incluye.component';
 import { ExtrasComponent } from './extras/extras.component';
 import { CaracteristicasComponent } from './caracteristicas/caracteristicas.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
@@ -25,12 +27,13 @@ import { ContactoComponent } from './contacto/contacto.component';
     QueIncluyeComponent,
     ExtrasComponent,
     CaracteristicasComponent,
-    ContactoComponent
+    ContactoComponent,
+    SidebarComponent
   ],
   imports: [
     // PrimeNG
     CarouselModule,
-
+    SidebarModule,
     BrowserModule,
     HttpClientModule,
     AppRoutingModule

@@ -1,0 +1,11 @@
+<div class="sidebar" [ngClass]="{'sidebar-open': isOpen}">
+    <header class="sidebar-header">
+        <img src="assets/images/invi.svg" alt="Invi" class="invi">
+        <p (click)="closeSidebar()" class="close">❌</p>
+    </header>
+    <section class="options">
+        <section class="item" *ngFor="let item of navItems">
+            <a (click)="goTo(item.id)">{{item.title}}</a>
+        </section>
+    </section>
+</div>

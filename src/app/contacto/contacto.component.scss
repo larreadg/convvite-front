@@ -26,6 +26,12 @@
         padding-top: 2rem;
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+
+        @media screen and (min-width: $md) {
+            flex-direction: row;
+        }
         
         .btn {
             pointer-events: auto !important;
