@@ -1,0 +1,34 @@
+@import '../../theme';
+
+.header {
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 1rem;
+    
+    .invi {
+        width: 100px;
+        height: auto;
+    }
+
+    .items {
+        display: none;
+        gap: 1rem;
+        list-style-type: none;
+
+        @media screen and (min-width: $md) {
+            display: flex;
+        }
+
+        li a {
+            cursor: pointer;
+            font-size: 1rem;
+
+            &:hover {
+                color: $primary-color !important;
+            }
+        }
+    }
+}

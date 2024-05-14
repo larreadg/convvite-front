@@ -1,0 +1,80 @@
+@import '../../theme';
+
+#que-incluye {
+
+    padding: 1rem 0 3rem 0;
+    background-color: $accent-color;
+    background-image: url('../../assets/images/bg-pattern.png');
+    background-size: cover;
+    background-position: center;
+
+    * {
+        pointer-events: none;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 2rem;
+        color: $primary-color;
+        font-weight: bold;
+        animation: fadeIn 1s ease-in-out; /* 1s es la duración de la animación */
+        animation-fill-mode: forwards;
+    }
+    
+}
+
+:host ::ng-deep .p-carousel .p-carousel-prev,
+:host ::ng-deep .p-carousel .p-carousel-next {
+  /* tus estilos personalizados aquí */
+  align-items: center;
+  background-color: $accent-color;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: $primary-color;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
+  pointer-events: auto !important;
+
+  .p-carousel-prev-icon, .p-carousel-next-icon {
+    font-size: 1.5rem;
+  }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .icon {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+
+    .card-titles {
+
+        min-height: 50vw;
+        
+        @media screen and (min-width: $md) {
+            min-height: 20vw;
+        }
+        
+        .card-title {
+            font-weight: bold;
+            color: $tertiary-color;
+            font-size: 1.25rem;
+            text-align: center;
+        }
+        
+        .card-subtitle {
+            font-weight: lighter;
+            color: $primary-color;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+}

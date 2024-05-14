@@ -1,0 +1,23 @@
+<section id="extras">
+    <p class="title">Más opciones que puedes agregar 🚀</p>
+    <p-carousel 
+        [value]="list" 
+        [showIndicators]="false"
+        [circular]="true" 
+        [responsiveOptions]="responsiveOptions"
+        [numVisible]="4"
+        [numScroll]="1"
+        [autoplayInterval]="5000">
+        <ng-template let-item pTemplate="item">
+            <section class="card">
+                <section class="content">
+                    <p class="icon">{{item.img}}</p>
+                    <section class="card-titles">
+                        <p class="card-title">{{item.title}}</p>
+                        <p class="card-subtitle">{{item.description}}</p>
+                    </section>
+                </section>
+            </section>
+        </ng-template>
+    </p-carousel>
+</section>

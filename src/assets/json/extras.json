@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Música",
+        "description": "Selecciona una canción que refleje el estilo y el ambiente de tu celebración",
+        "img": "🎶"
+    },
+    {
+        "title": "Regalos",
+        "description": "Comparte sugerencias y facilita el proceso de regalar para tus invitados. Agregar listas de mesa de regalos o datos de cuentas bancarias",
+        "img": "🎁"
+    },
+    {
+        "title": "Asistencia",
+        "description": "Incluye un formulario simple donde los invitados pueden indicar si planean asistir o no asistir al evento",
+        "img": "✅"
+    },
+    {
+        "title": "Invitados",
+        "description": "Cada invitado verá su nombre en la invitación, lo que agrega un toque personal y exclusivo a la experiencia",
+        "img": "😄"
+    }
+]

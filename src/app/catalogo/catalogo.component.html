@@ -1,0 +1,25 @@
+<section id="catalogo">
+    <h1 class="title">Explora nuestros diseños ✨</h1>
+    <p-carousel
+        #carousel
+        [value]="proyectos" 
+        [showIndicators]="false"
+        [circular]="true" 
+        [responsiveOptions]="responsiveOptions"
+        [numVisible]="4"
+        [numScroll]="1">
+        <ng-template let-item pTemplate="item">
+            <section class="card">
+                <header>
+                    <img [src]="item.img" [alt]="item.title">
+                </header>
+                <section class="content">
+                    <a target="_blank" [href]="item.url">{{item.title}} <i class="pi pi-external-link"></i></a>
+                </section>
+            </section>
+        </ng-template>
+    </p-carousel>
+    <section class="btn-wrapper">
+        <a class="btn" href="https://wa.me/{{telefono}}">Quiero mi invitación 💌</a>
+    </section>
+</section>

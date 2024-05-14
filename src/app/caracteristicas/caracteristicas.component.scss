@@ -1,0 +1,47 @@
+@import '../../theme';
+
+#caracteristicas {
+    padding: 1rem 0 1rem 0;
+    background-color: $accent-color;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../../assets/images/bg-pattern.png');
+    background-size: cover;
+    background-position: center;
+
+    .item {
+
+        img {
+            width: 25%;
+            height: auto;
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            color: $tertiary-color;
+            text-align: center;
+        }
+
+        padding: 1rem;
+        width: calc(50% - 0.5rem); // Para que haya un pequeño espacio entre los elementos
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+        @media screen and (min-width: $md) {
+            width: calc(50% - 1rem); // Para que en pantallas medianas haya 2 elementos por fila
+        }
+    
+        @media screen and (min-width: $xl) {
+            width: calc(25% - 1rem); // Para que en pantallas grandes haya 4 elementos por fila
+        }
+    }
+}

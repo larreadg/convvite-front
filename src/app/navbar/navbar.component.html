@@ -1,0 +1,10 @@
+<header class="header">
+    <img class="invi" src="assets/images/invi.svg" alt="Invi">
+    <ul class="items">
+      <li *ngFor="let item of navItems">
+          <a (click)="scrollToElement(item.id)">
+              {{item.title}}
+          </a>
+      </li>
+    </ul>
+</header>

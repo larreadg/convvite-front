@@ -1,0 +1,42 @@
+@import '../../theme';
+
+.contact-top {
+
+    align-items: center;
+    background-color: $tertiary-color;
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    padding: 0 1rem;
+
+    @media screen and (min-width: $md) {
+        justify-content: space-between;
+    }
+
+    .item {
+        align-items: center;
+        display: none;
+        color: $accent-color;
+        gap: 0.25rem;
+
+        &:hover {
+            color: $secondary-color;
+        }
+
+        @media screen and (min-width: $md) {
+            display: flex;
+        }
+    }
+
+    .item-py {
+        align-items: center;
+        display: flex;
+        gap: 0.5rem;
+        color: $accent-color;
+        img {
+            width: 24px;
+            height: auto;
+        }
+    }
+
+}

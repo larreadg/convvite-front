@@ -1,0 +1,118 @@
+@import '../../theme';
+
+#inicio {
+    background-image: url('../../assets/images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 70px - 35px);
+    padding: 1rem;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .title {
+        text-align: center;
+        font-size: 2rem;
+        color: $accent-color;
+        // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+        z-index: 1;
+        animation: fadeIn 1s ease-in-out; /* 1s es la duración de la animación */
+        animation-fill-mode: forwards;
+
+        @media screen and (min-width: $md) {
+            font-size: 3rem;
+        }
+    }
+    
+    .overlay {
+        position: absolute; /* Posicionamos el overlay encima de la imagen de fondo */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4); /* Color del overlay con transparencia */
+        z-index: 0;
+    }
+
+    button {
+        z-index: 1;
+        animation: fadeIn 1s ease-in-out; /* 1s es la duración de la animación */
+        animation-fill-mode: forwards;
+    }
+}
+
+#video {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0 3rem 0;
+    background-color: $accent-color;
+    background-image: url('../../assets/images/bg-pattern.png');
+    background-size: cover;
+    background-position: center;
+
+
+    @media screen and (max-width: $md) {
+        flex-direction: column-reverse;
+    }
+
+    .youtube-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .youtube {
+            width: 100%;
+            height: 50vw;
+
+            @media screen and (min-width: $md) {
+                width: 80%;
+                height: 20vw;
+            }
+        }
+
+        @media screen and (min-width: $md) {
+            width: 50%;
+        }
+    }
+
+    .text-container {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+
+        .title {
+            text-align: center;
+            margin: 0;
+            font-size: 2rem;
+            color: $primary-color;
+
+            @media screen and (min-width: $md) {
+                text-align: left;
+            }
+        }
+
+        .subtitle {
+            text-align: center;
+            margin: 0;
+            font-size: 1.25rem;
+            margin-bottom: 3rem;
+
+            @media screen and (min-width: $md) {
+                text-align: left;
+                margin-bottom: 0;
+            }
+        }
+
+        @media screen and (min-width: $md) {
+            width: 50%;
+            padding: 0 1rem;
+        }
+    }
+}

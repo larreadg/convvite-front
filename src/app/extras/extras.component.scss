@@ -1,0 +1,81 @@
+@import '../../theme';
+
+#extras {
+    padding: 1rem 0 3rem 0;
+    background-color: $primary-color;
+
+    * {
+        pointer-events: none;
+    }
+
+    .title {
+        text-align: center;
+        color: $accent-color;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+}
+
+:host ::ng-deep .p-carousel .p-carousel-prev,
+:host ::ng-deep .p-carousel .p-carousel-next {
+  /* tus estilos personalizados aquí */
+  align-items: center;
+  background-color: $primary-color;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: $accent-color;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
+  pointer-events: auto !important;
+
+  .p-carousel-prev-icon, .p-carousel-next-icon {
+    font-size: 1.5rem;
+  }
+}
+
+.card {
+    background-color: $accent-color;
+    background-image: url('../../assets/images/bg-pattern.png');
+    background-size: cover;
+    background-position: center;    
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .icon {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+
+    .card-titles {
+
+        min-height: 50vw;
+        
+        @media screen and (min-width: $md) {
+            min-height: 20vw;
+        }
+        
+        .card-title {
+            font-weight: bold;
+            color: $tertiary-color;
+            font-size: 1.25rem;
+            text-align: center;
+        }
+        
+        .card-subtitle {
+            font-weight: lighter;
+            color: $primary-color;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+}
