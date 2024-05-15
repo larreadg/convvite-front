@@ -1,5 +1,5 @@
-export const telefono = '595972413798'
-export const email = 'larreadg@gmail.com'
+export const telefono = '595985114624'
+export const email = 'invidigitalpy@gmail.com'
 export const navItems = [
     {
         title: 'Inicio',
