@@ -2,7 +2,7 @@
 
 #extras {
     padding: 1rem 0 3rem 0;
-    background-color: $primary-color;
+    background-color: $tertiary-color;
 
     * {
         pointer-events: none;
@@ -21,7 +21,7 @@
 :host ::ng-deep .p-carousel .p-carousel-next {
   /* tus estilos personalizados aquí */
   align-items: center;
-  background-color: $primary-color;
+  background-color: $tertiary-color;
   border-radius: 50%;
   border: none;
   cursor: pointer;

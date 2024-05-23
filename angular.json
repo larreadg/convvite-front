@@ -76,7 +76,7 @@
             "ssl": true,
             "sslKey": "server.key",
             "sslCert": "server.crt",
-            "host": "192.168.0.5",
+            "host": "192.168.0.6",
             "port": 4200
           }
         },
